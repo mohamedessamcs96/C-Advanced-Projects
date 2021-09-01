@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    
+    int studentGrade[3];
+    int x;
+    for(int i=0;i<5;i++){
+    printf("Enter the student's %d grade:",i+1);
+    scanf("%d",&studentGrade[i]);
+
+}
+
+    for(int i=4;i>0;i--){
+        //Queue//FIFO=First input first Output
+        //Stack//LIFO=Last input First Output
+        printf("Student number %d got :%d",i+1,studentGrade[i]);
+
+    }
+
+}

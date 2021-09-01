@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    /*
+    Cachier system
+    1.100
+    2.5
+    3.7
+    4.12
+    total=124
+    */
+
+    /*
+    1.sum
+    2.loop n time
+    3.input number
+    4.sum=number+sum
+    5.print sum
+    */
+
+    //int sum;
+    //int x;
+
+    int sum=0;
+    int number;
+    int count;
+    printf("Enter How many items!");
+    scanf("%d",&count);
+    for(int i=0;i<count;i++){               // i=i+1
+                                            // i+1
+        printf("Enter The Item's %d Price:\n",i+1);
+        scanf("%d",&number);
+        sum=sum+number;
+
+    }
+
+    printf("The total Price is:%d\n",sum);
+    printf("The avg will be : %d",sum/count);
+/*
+    =======
+    1.count
+    2.check
+    3.++ --
+    =======
+    int count=10;
+
+    while(count>0){
+
+    printf("Hello world! %d\n",count);
+
+    //count =count+2;
+    //count+=2;
+    count--;
+    //count=count+1;
+    }
+*/
+}

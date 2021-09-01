@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int itemsPrice;
+    int itemsNumber;
+    int sum=0;
+    printf("Enter the number of items:");
+    scanf("%d",&itemsNumber);
+    for(int i=0;i<itemsNumber;i++)
+    {
+
+        do{
+            printf("Enter item's %d price:",i+1);
+            scanf("%d",&itemsPrice);
+        }
+        while(itemsPrice<1);
+        sum=sum+itemsPrice;
+
+
+
+
+}
+    printf("Your Total cost is %f:\n",sum+sum*0.14);
+
+
+
+
+
+
+    /*
+    int count=0;
+    while(count<10){
+
+        printf("sth");
+        count++;
+    }
+    */
+
+
+
+
+}

@@ -1,0 +1,7 @@
+gets()
+puts()
+pow()
+floor()
+ceil()
+sqrt()
+abs()

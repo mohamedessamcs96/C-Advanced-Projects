@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define PASSWORD 1996
+/*
+balance
+password=12345
+
+
+*/
+
+
+int main()
+{
+    int balance=9000;
+    int  password;
+    while(1){
+
+       printf("\nEnter your password:");
+       scanf("%d",&password);
+       if(password==PASSWORD){
+        printf("Valid\n");
+        int processNumber;
+        printf("Enter the process number:\n");
+        printf("To check the balance press 1:\n");
+        printf("To withdraw press 2:\n");
+        printf("To deposit press 3:\n");
+        scanf("%d",&processNumber);
+        if(processNumber==1){
+            printf("Your Balance is:%d",balance);
+        }
+        else if(processNumber==2){
+            int widthdrawnymber;
+            printf("Enter How many pounds you want to withdraw:");
+            scanf("%d",&widthdrawnymber);
+            if(balance>=widthdrawnymber){
+                balance=balance-widthdrawnymber;
+                printf("Your Process done sucsesfully you've now %d\n",balance);
+            }
+            else{
+                printf("Invalid operations!");
+            }
+        }
+        else if(processNumber==3){
+                int depositNumber;
+                printf("Enter the amount of deposit:");
+                scanf("%d",&depositNumber);
+                balance=balance+depositNumber;
+                printf("You've deposit %d and your balance is %d",depositNumber,balance);
+        }
+        else {
+            printf("Wrong process Number:");
+        }
+       }
+       else{
+        printf("Wrong Password");
+}
+
+}
+}

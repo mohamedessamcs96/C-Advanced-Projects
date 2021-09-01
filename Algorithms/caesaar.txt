@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char name[10];
+    printf("Enter a name:");
+    gets(name);
+
+    int key;
+
+    printf("Enter a key:");
+    scanf("%d",&key);
+
+
+
+    for(int i=0;i<strlen(name);i++){
+        printf("%c",name[i]=name[i]+key);
+    }
+
+    printf("\n%s\n",name);
+
+    for(int i=0;i<strlen(name);i++){
+        printf("%c",name[i]=name[i]-key);
+    }
+
+    printf("\n%s\n",name);
+}

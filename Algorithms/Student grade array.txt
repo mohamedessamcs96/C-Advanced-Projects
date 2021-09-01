@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int student_grade[5];
+
+    for(int i=0;i<5;i++){
+
+        printf("Enter Student Grade %d:",i+1);
+        scanf("%d",&student_grade[i]);
+    }
+
+      for(int i=0;i<5;i++){
+
+        if(student_grade[i]>=50){
+        printf("Student %d Grade = %d: Pass!\n",i+1,student_grade[i]);
+        }
+    }
+
+
+
+
+}

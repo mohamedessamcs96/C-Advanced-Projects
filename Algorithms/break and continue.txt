@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int age;
+    for(int i=0;i<5;i++){
+        printf("Enter the age of %d employee:",i+1);
+        scanf("%d",&age);
+        if(age>30){
+            break;
+        }
+        else{
+            printf("Accepted The number %d :\n",i+1);
+        }
+        printf("====\n");
+    }
+}

@@ -1,0 +1,73 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int collegeNumber;
+    int departement;
+    printf("Enter the college you want to join:\n");
+    printf("If you want to join Faculty of Enginnering press 1:\n");
+    printf("If you want to join Faculty of Medicine press 2:\n");
+    printf("If you want to join Faculty of Computer science press 3:\n");
+
+    scanf("%d",&collegeNumber);
+    if(collegeNumber==1){
+        printf("Congrats You've join to Faculty of Enginnering\n");
+        printf("Enter the dep you want to join:\n");
+        scanf("%d",&departement);
+        if(departement==1){
+            printf("Congrats You've join to dep of Electrnics\n");
+        }
+        else if(departement==2){
+            printf("Congrats You've join to dep of Mecha\n");
+        }
+        else if(departement==3){
+            printf("Congrats You've join to dep of Biomedical\n");
+        }
+    }
+    else if(collegeNumber==2){
+        printf("Congrats You've join to Faculty of Medcine\n");
+        printf("Enter the dep you want to join:\n");
+        scanf("%d",&departement);
+        if(departement==1){
+            printf("Congrats You've join to dep of Electrnics\n");
+        }
+        else if(departement==2){
+            printf("Congrats You've join to dep of Mecha\n");
+        }
+        else if(departement==3){
+            printf("Congrats You've join to dep of Biomedical\n");
+        }
+    }
+    else if(collegeNumber==3){
+        printf("Congrats You've join to Faculty of Computer Science\n");
+        printf("Enter the dep you want to join:\n");
+        scanf("%d",&departement);
+        if(departement==1){
+            printf("Congrats You've join to dep of CS\n");
+        }
+        else if(departement==2){
+            printf("Congrats You've join to dep of AI\n");
+        }
+        else if(departement==3){
+            printf("Congrats You've join to dep of IS\n");
+        }
+    }
+    else {printf("Invalid number");}
+
+    int age;
+    printf("Enter your age:");
+    scanf("%d",&age);
+    if(age>=18){
+        if(age<=30){
+          if(age !=20) {
+            printf("legal");
+          }
+          else{printf("Not legal");}
+        }
+        else{printf("Not legal");}
+    }
+    else{printf("Not legal");}
+
+
+}
